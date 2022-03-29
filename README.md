@@ -1,6 +1,7 @@
 # yolo_template
 
 默认使用voc的cfg文件
+
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
 
 训练图片时把图片放到 `pictures/{两位数字+英文类型名称}/images/{图片名称}.jpg`
@@ -15,6 +16,8 @@
 把`run.sh和test.sh`文件放在darknet文件夹下，里面的path.conf cfg weights 等文件的路径改为绝对路径
 
 运行 `python crun.py` 根据放入的图片自动编辑配置文件
+
+crun.py的dir_dataset路径也改为绝对路径
 
 然后 `./run.sh` 开始学习
 
