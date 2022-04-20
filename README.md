@@ -48,6 +48,8 @@
 - 下の写真に示したようにcrun.pyを開いて、dir_dataset、path_cfgとpath_templateを絶対パスに変更する
   
   ![Screenshot from 2022-04-21 04-04-17](https://user-images.githubusercontent.com/50350039/164304243-5f994045-667c-4758-8e7e-4151cbe5ae7d.png)
+  
+  
   crun.pyを実行できるように権限を与える.pythonファイルを実行する、面倒くさいことを自動的にやってくれる.一体どんなことを処理したのかについてはコードを読んたらわかるはず
   ```
   python3 crun.py
