@@ -28,7 +28,15 @@
   コンパイルが通ったら、ディフォルトの画像を使って構築した環境を確認する
   ```
   wget https://pjreddie.com/media/files/yolov3.weights //著者が学習した重みをダウンロード
-  ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg　//画像の物体を検出する、このコマンドを打ち終わったあとに認識した画像が/darknetの下に出てくれると思う
+  
+  ```
+  ここまで来たら、/darknet/cfg/yolov3.cfgを開いて、認識モードとトレーンモードが分けられているため、画像を認識したいときはトレーンモードをコマンドアウトしなあかん、逆に言うと画像を学習させるときも同じ作業をやる.
+  ![Screenshot from 2022-04-20 23-28-07](https://user-images.githubusercontent.com/50350039/164253774-05989589-c9e8-4da3-ba12-f474850ff08e.png)
+
+  
+  ```
+  ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg　//画像の物体を検出する、このコマンドを打ち終わったあとに認識した画像が/darknetの下に出てくれると思う.
+  
   ```
   
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
