@@ -40,6 +40,10 @@
   ```
   
 # カスタマイズの画像データをyoloで学習させる
+```
+cd darknet
+
+```
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
 
 训练图片时把图片放到 `pictures/{两位数字+英文类型名称}/images/{图片名称}.jpg`
