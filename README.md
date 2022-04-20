@@ -44,25 +44,21 @@
 cd darknet
 git clone https://github.com/xjw1996/yolo_template.git
 ```
-yolo_template を名前を学習する対象のものの名前を変更した方が区別しやすい
-まずweights/download_default_weight.shを実行し、事前にトレーニングされたウェイトのファイルをダウンロードする
-続いては前もって作成した学習データをpicturesのフォルダに入れる、下の図ように番号つけたデータセットを入れる
+- yolo_template を名前を学習する対象のものの名前を変更した方が区別しやすい
+  まずweights/download_default_weight.shを実行し、事前にトレーニングされたウェイトのファイルをダウンロードする
+- 続いては前もって作成した学習データをpicturesのフォルダに入れる、下の図ように番号つけたデータセットを入れる（番号は必ず00オブジェクト1，01オブジェクト2の形にする）
 
-![Screenshot from 2022-04-21 03-46-45](https://user-images.githubusercontent.com/50350039/164301640-7228b441-321b-4986-a69e-0a6d3ab03672.png)
+  ![Screenshot from 2022-04-21 03-46-45](https://user-images.githubusercontent.com/50350039/164301640-7228b441-321b-4986-a69e-0a6d3ab03672.png)
 
-中身は下図に示した通り左図が学習画像で、右図は対応したアノテーションしたデータとなる
+  中身は下図に示した通り左図が学習画像で、右図は対応したアノテーションしたデータとなる
 
-![Screenshot from 2022-04-21 03-52-40](https://user-images.githubusercontent.com/50350039/164302344-1783b8f5-2c56-47fd-9468-0ceb1f9f761e.png)
+  ![Screenshot from 2022-04-21 03-52-40](https://user-images.githubusercontent.com/50350039/164302344-1783b8f5-2c56-47fd-9468-0ceb1f9f761e.png)
 
+  作成した学習データのサンプル（缶、ペットボトル、弁当、各種つきおよそ2000枚ずつ）についてはシェアのフォルダに私（2021年度薛　経緯）のところにアップロードした.
+- 下の写真に示したようにcrun.pyを開いて、dir_dataset、path_cfgとpath_templateを絶対パスに変更する
+  
+  ![Screenshot from 2022-04-21 04-04-17](https://user-images.githubusercontent.com/50350039/164304243-5f994045-667c-4758-8e7e-4151cbe5ae7d.png)
 
-训练图片时把图片放到 `pictures/{两位数字+英文类型名称}/images/{图片名称}.jpg`
-
-对应的annotation 放到 `pictures/{两位数字+英文类型名称}/lables/{图片名称}.txt`
-
-`{图片名称}.txt` 文件中的头两个数字 必须和 文件夹的两位数字 一致 必须是连续数字
-
-`{图片名称}.txt` 解释:
-`两位数字的编号` `对象x中心 / 图片weight` `对象y中心 / 图片height` `对象weight / 图片weight`  `对象height / 图片height` 
 
 把`run.sh和test.sh`文件放在darknet文件夹下，里面的path.conf cfg weights 等文件的路径改为绝对路径
 
