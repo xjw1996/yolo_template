@@ -39,6 +39,7 @@
   ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg　//画像の物体を検出する、このコマンドを打ち終わったあとに認識した画像が/darknetの下に出てくれると思う.
   ```
   
+# カスタマイズの画像データをyoloで学習させる
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
 
 训练图片时把图片放到 `pictures/{两位数字+英文类型名称}/images/{图片名称}.jpg`
