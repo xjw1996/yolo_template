@@ -3,13 +3,14 @@
 
 
 # YoloV3の環境構築
-- このサイトはYOLOV3の公式サイトhttps://pjreddie.com/darknet/yolo/　ですが、以下にまとめると
-```
-cd ~
-git clone https://github.com/pjreddie/darknet
-cd darknet
-make
-```
+- このサイトはYOLOV3の公式サイトhttps://pjreddie.com/darknet/yolo/　
+  ですが、以下にまとめると
+  ```
+  cd ~
+  git clone https://github.com/pjreddie/darknet
+  cd darknet
+  make
+  ```
   
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
 
