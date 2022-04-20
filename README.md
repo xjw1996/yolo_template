@@ -12,12 +12,16 @@
   git clone https://github.com/pjreddie/darknet
   cd darknet
   ```
-  darknetフォルダ内のMakefileを開いて、GPU,CUDNN,OPeNCVの０を１に変更する.少なくともGPUを変更すること、全部０のままにしたら、CPUだけを使うことになる.opencvを１に変更すると、認識した画像の結果がチェックしやすくになる.CUDNN、opencvを使わなくてもGPUだけ使ってもデータを学習できる.NVCCの行も現在使っているCUDAのパスを変更する.例として以下に示す
+  darknetフォルダ内のMakefileを開いて、GPU,CUDNN,OPeNCVの０を１に変更する.少なくともGPUを変更すること、全部０のままにしたら、CPUだけを使うことになる.opencvを１に変更すると、認識した画像の結果がチェックしやすくになる.CUDNN、opencvを使わなくてもGPUだけ使ってもデータを学習できる.NVCCの行も現在使っているCUDAのパスを変更する.例として以下に示す.
   ```
   GPU=1
   CUDNN=1
   OPENCV=1
   NVCC=/usr/local/cuda-10.1/bin/nvcc
+  ```
+  Makefileを変更したあとに、makeでコンパイルする.
+  ```
+  make
   ```
   
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
