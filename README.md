@@ -3,6 +3,8 @@
 
 
 # YoloV3の環境構築
+- GPU環境のセッティング
+  
 - このサイトはYOLOV3の公式サイトhttps://pjreddie.com/darknet/yolo/　
   ですが、以下にまとめると
   ```
