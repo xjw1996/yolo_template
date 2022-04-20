@@ -46,10 +46,13 @@ git clone https://github.com/xjw1996/yolo_template.git
 ```
 yolo_template を名前を学習する対象のものの名前を変更した方が区別しやすい
 まずweights/download_default_weight.shを実行し、事前にトレーニングされたウェイトのファイルをダウンロードする
-続いては前もって作成した学習データをpicturesのフォルダに入れる、下の図ように
+続いては前もって作成した学習データをpicturesのフォルダに入れる、下の図ように番号つけたデータセットを入れる
 
 ![Screenshot from 2022-04-21 03-46-45](https://user-images.githubusercontent.com/50350039/164301640-7228b441-321b-4986-a69e-0a6d3ab03672.png)
 
+中身は下図に示した通り左図が学習画像で、右図は対応したアノテーションしたデータとなる
+
+![Screenshot from 2022-04-21 03-52-40](https://user-images.githubusercontent.com/50350039/164302344-1783b8f5-2c56-47fd-9468-0ceb1f9f761e.png)
 
 
 训练图片时把图片放到 `pictures/{两位数字+英文类型名称}/images/{图片名称}.jpg`
