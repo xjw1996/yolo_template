@@ -1,1 +1,2 @@
-./darknet detector demo ./path.conf ./yolov3-voc.cfg ./weights/yolov3-voc.backup
+cd ..
+./darknet detector demo /home/xue/darknet/gomi/path.conf /home/xue/darknet/gomi/yolov3-voc.cfg /home/xue/darknet/gomi/weights/yolov3-voc.backup
