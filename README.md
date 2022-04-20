@@ -43,14 +43,17 @@
   python3 crun.py
   ```
   ![Screenshot from 2022-04-21 04-11-37](https://user-images.githubusercontent.com/50350039/164305231-df400837-5124-4891-802c-42f20f8c4896.png)
+  
   run.sh と　test.sh中の絶対パスをすべて使っているパソコンの方に合わせて、実行できるように権限を与える.
   
+  run.shをdarknetフォルダの下に移動する.
+  ```
+  ./run.sh //学習開始となる
+  ./test.sh　//学習した重みでカメラでテストする
+  ```
+  
+  
 
-把`run.sh和test.sh`文件放在darknet文件夹下，里面的path.conf cfg weights 等文件的路径改为绝对路径
-
-运行 `python crun.py` 根据放入的图片自动编辑配置文件
-
-crun.py的dir_dataset路径也改为绝对路径
 
 然后 `./run.sh` 开始学习
 
