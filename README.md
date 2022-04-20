@@ -1,6 +1,7 @@
 #   ロボ研へーこのマニュアルはYoloV3の環境構築及びデータ学習までの流れを示すために作成した
 作成した動画は以下に示す
-<iframe src="//player.bilibili.com/player.html?aid=73316901&bvid=BV1VE41117r4&cid=125414920&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+
+\\158.217.176.190\Share\#2_学生\2021年度卒修論\R班\薛　経緯
 
 
 # YoloV3の環境構築
