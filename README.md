@@ -38,7 +38,6 @@
   
   ```
   ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg　//画像の物体を検出する、このコマンドを打ち終わったあとに認識した画像が/darknetの下に出てくれると思う.
-  
   ```
   
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
