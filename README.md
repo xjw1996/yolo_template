@@ -36,12 +36,13 @@
  cd darknet
  git clone https://github.com/xjw1996/yolo_template.git
  ```
- yolo_template を名前を学習する対象のものの名前を変更した方が区別しやすい まずweights/download_default_weight.shを実行し、事前にトレーニングされたウェイトのファイルをダウンロードする 続いては前もって作成した学習データをpicturesのフォルダに入れる、下の図ように番号つけたデータセットを入れる（番号は必ず00オブジェクト1，01オブジェクト2の形にする）
+ - yolo_template を名前を学習する対象のものの名前を変更した方が区別しやすい まずweights/download_default_weight.shを実行し、事前にトレーニングされたウェイトのファイルをダウンロ  ードする 続いては前もって作成した学習データをpicturesのフォルダに入れる、下の図ように番号つけたデータセットを入れる（番号は必ず00オブジェクト1，01オブジェクト2の形にする）
  ![Screenshot from 2022-04-21 03-46-45](https://user-images.githubusercontent.com/50350039/164308407-8879dab1-41cb-4ea2-a388-b8e35886af91.png)
 
  中身は下図に示した通り左図が学習画像で、右図は対応したアノテーションしたデータとなる
  
-  ![Screenshot from 2022-04-20 23-28-07](https://user-images.githubusercontent.com/50350039/164302344-1783b8f5-2c56-47fd-9468-0ceb1f9f761e.png)
+ 
+ ![Screenshot from 2022-04-20 23-28-07](https://user-images.githubusercontent.com/50350039/164302344-1783b8f5-2c56-47fd-9468-0ceb1f9f761e.png)
 
   作成した学習データのサンプル（缶、ペットボトル、弁当、各種つきおよそ2000枚ずつ）についてはシェアのフォルダに私（2021年度薛　経緯）のところにアップロードした.
 - 下の写真に示したようにcrun.pyを開いて、dir_dataset、path_cfgとpath_templateを絶対パスに変更する
