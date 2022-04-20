@@ -17,7 +17,8 @@
   ```
   GPU=1
   CUDNN=1
-  OPENCV=1
+  OPENCV=1　//私が使っているopencvはopencv４なので、正しく設定したいとしたら手間がかかる作業なので動画の方で説明する
+  //opencv4をyolov3でも使えるようにする方法はhttps://lifesaver.codes/answer/src-image-opencv-cpp-5-10-fatal-error-opencv2-opencv-hpp-no-such-file-or-directory-1886　に参照する
   NVCC=/usr/local/cuda-10.1/bin/nvcc
   ```
   Makefileを変更したあとに、makeでコンパイルする.
