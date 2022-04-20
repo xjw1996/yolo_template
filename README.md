@@ -1,7 +1,7 @@
 #   ロボ研へーこのマニュアルはYOLOV3の環境構築及びデータ学習までの流れを示すために作成した
-
+    作成した動画は以下に示す
 - このサイトはYOLOV3の公式サイトhttps://pjreddie.com/darknet/yolo/
-  公式サイトを参照し、
+
 
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
 
