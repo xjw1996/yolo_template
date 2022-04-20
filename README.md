@@ -42,9 +42,15 @@
 # カスタマイズの画像データをyoloで学習させる
 ```
 cd darknet
-
+git clone https://github.com/xjw1996/yolo_template.git
 ```
-初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
+yolo_template を名前を学習する対象のものの名前を変更した方が区別しやすい
+まずweights/download_default_weight.shを実行し、事前にトレーニングされたウェイトのファイルをダウンロードする
+続いては前もって作成した学習データをpicturesのフォルダに入れる、下の図ように
+
+![Screenshot from 2022-04-21 03-46-45](https://user-images.githubusercontent.com/50350039/164301640-7228b441-321b-4986-a69e-0a6d3ab03672.png)
+
+
 
 训练图片时把图片放到 `pictures/{两位数字+英文类型名称}/images/{图片名称}.jpg`
 
