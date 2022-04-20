@@ -31,6 +31,12 @@
   ```
   ここまで来たら、/darknet/cfg/yolov3.cfgを開いて、認識モードとトレーンモードが分けられているため、画像を認識したいときはトレーンモードをコマンドアウトしなあかん、逆に言うと画像を学習させるときも同じ作業をやる.
   
+  ![Screenshot from 2022-04-21 04-38-18](https://user-images.githubusercontent.com/50350039/164309531-35fc2873-54d0-42ab-9838-3aafc4f06b60.png)
+
+```
+./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg　//画像の物体を検出する、このコマンドを打ち終わったあとに認識した画像が/darknetの下に出てくれると思う.
+```
+  
  # カスタマイズの画像データをyoloで学習させる
  ```
  cd darknet
