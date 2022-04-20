@@ -25,7 +25,7 @@
   ```
   make
   ```
-  コンパイルが通ったら、画像を使って構築した環境をテストする、
+  コンパイルが通ったら、ディフォルトの画像を使って構築した環境を確認する、
   ```
   wget https://pjreddie.com/media/files/yolov3.weights //著者が学習した重みをダウンロード
   ./darknet detect cfg/yolov3.cfg yolov3.weights data/dog.jpg　//画像の物体を検出する、このコマンドを打ち終わったあとに認識した画像が/darknetの下に出てくれると思う
