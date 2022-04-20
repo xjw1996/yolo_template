@@ -1,4 +1,5 @@
-# yolo_template
+#   ロボ研へ
+# 
 
 默认使用voc的cfg文件
 
