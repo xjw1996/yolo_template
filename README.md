@@ -3,10 +3,10 @@
 
 
 # YoloV3の環境構築
-- GPU環境のセッティングは
-  
+- GPU環境のセッティングはyolo_template中のcuda.pdfに参照する
+- OpenCVのインストールはhttps://linuxize.com/post/how-to-install-opencv-on-ubuntu-20-04/に参照する
 - このサイトはYOLOV3の公式サイトhttps://pjreddie.com/darknet/yolo/　
-  ですが、以下にまとめると
+  ですが、GPUとOpenCVの環境をセッティング完了したら、以下の手順に進む
   ```
   cd ~
   git clone https://github.com/pjreddie/darknet
