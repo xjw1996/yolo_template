@@ -4,9 +4,9 @@ import os
 import re
 import string
 
-dir_dataset = './pictures'
-path_cfg = './yolov3-voc.cfg'
-
+dir_dataset = '/home/xue/darknet/gomi/pictures'
+path_cfg = '/home/xue/darknet/gomi/yolov3-voc.cfg'
+path_template = '/home/xue/darknet/gomi/'
 
 # 遍历 dataset 目录
 lables_total = []
@@ -41,13 +41,15 @@ with open('./names.txt', 'w+') as f:
 
 # 设置path.conf文件
 with open('./path.conf', 'w') as f:
-    f.writelines(
-        '''classes = %s
-train = train.txt
-valid = test.txt
-names = names.txt
-backup = weights
-''' % len(classes_total))
+    text=[
+        "classes = " + str(len(classes_total))+'\n',
+        "train = "+ path_template +"train.txt\n",
+        "valid = "+ path_template +"train.txt\n",
+        "train = "+ path_template +"test.txt\n",
+        "names = "+ path_template +"names.txt\n",
+        "backup = "+ path_template +"weights",
+    ]
+    f.writelines(text)
 
 # 修改 cfg 文件 classes 相关参数
 with open(path_cfg, 'r') as f:
