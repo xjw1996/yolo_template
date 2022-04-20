@@ -1,5 +1,6 @@
 #   ロボ研へーこのマニュアルはYoloV3の環境構築及びデータ学習までの流れを示すために作成した
 作成した動画は以下に示す
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b50o0UXOc0I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 # YoloV3の環境構築
