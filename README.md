@@ -11,8 +11,13 @@
   cd ~
   git clone https://github.com/pjreddie/darknet
   cd darknet
-  make
   ```
+  darknetフォルダ内のMakefileを開いて、
+  ｀｀｀
+  GPU=1
+  CUDNN=1
+  OPENCV=1
+  ｀｀｀
   
 初次需要运行 `weights/download_default_weight.sh` 下载与训练模型
 
