@@ -43,7 +43,7 @@
 
   ちなみに，ウェブカメラを使ってリアルタイムで物体を検出したい場合では，以下のコマンドを実行する．しかし，MakefileなかのGPUとOpenCVを１に修正しコンパイルが通った（GPUとOpenCVを使うこと）前提としてウェブカメラでリアルタイムで検出結果をチェックできる．
   ```
-  ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights
+  ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights　//ウェブカメラでリアルタイム検出
   ```
   
  # カスタマイズの画像データをyoloで学習させる
