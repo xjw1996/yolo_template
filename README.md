@@ -15,7 +15,7 @@
   git clone https://github.com/pjreddie/darknet
   cd darknet
   ```
-  darknetフォルダ内のMakefileを開いて、GPU,CUDNN,OPeNCVの０を１に変更する.少なくともGPUを変更すること、全部０のままにしたら、CPUだけを使うことになる.opencvを１に変更すると、認識した画像の結果がチェックしやすくになる.CUDNN、opencvを使わなくてもGPUだけ使ってもデータを学習できる.NVCCの行も現在使っているCUDAのパスを変更する.例として以下に示す.
+  darknetフォルダ内のMakefileを開いて、GPU,CUDNN,OPeNCVの０を１に変更する.少なくともGPUを変更すること、全部０のままにしたら、CPUだけを使うことになる.opencvを１に変更すると、認識した画像の結果がチェックしやすくになる.CUDNN、opencvを使わなくてもGPUだけ使ってもデータの学習作業が進められる.NVCCの行も現在使っているCUDAのパスを変更した方がコンパイル時にエラーが出にくいと思う.例として以下に示す.
   ```
   GPU=1
   CUDNN=1
