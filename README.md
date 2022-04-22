@@ -47,11 +47,10 @@
   ```
   
  # カスタマイズの画像データをyoloで学習させる
- 
-     ```
-     cd darknet
-     git clone https://github.com/xjw1996/yolo_template.git
-     ```
+   ```
+   cd darknet
+   git clone https://github.com/xjw1996/yolo_template.git
+   ```
  - yolo_template の名前を学習させたい対象の名前を変更した方が区別しやすい．まずweights/download_default_weight.sh（実行できるように権限を与える）を実行し、事前にトレーニングされたウェイトのファイルをダウンロードする ．続いては前もって作成した学習データをpicturesのフォルダの下に、下の図ように番号つけたデータセットを入れる（番号は必ず00オブジェクト1，01オブジェクト2の形にする）
  
   ![Screenshot from 2022-04-21 03-46-45](https://user-images.githubusercontent.com/50350039/164308407-8879dab1-41cb-4ea2-a388-b8e35886af91.png)
