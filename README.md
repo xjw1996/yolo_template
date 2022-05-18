@@ -86,3 +86,8 @@
   ./run.sh //学習開始となる
   ./test.sh　//学習した重みでカメラでテストする
   ```
+  
+  - 学習した重みファイルを使って未学習の画像に対して結果の検証については以下のコマンド
+    ```
+    ./darknet detector test <dir>/path.conf  <dir>/YOLOv3-voc.backup <dir>/picture.png 
+    ```
