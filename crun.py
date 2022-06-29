@@ -44,8 +44,7 @@ with open('./path.conf', 'w') as f:
     text=[
         "classes = " + str(len(classes_total))+'\n',
         "train = "+ path_template +"train.txt\n",
-        "valid = "+ path_template +"train.txt\n",
-        "train = "+ path_template +"test.txt\n",
+        "valid = "+ path_template +"test.txt\n",
         "names = "+ path_template +"names.txt\n",
         "backup = "+ path_template +"weights",
     ]
