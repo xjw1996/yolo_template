@@ -90,4 +90,7 @@
 - 学習した重みファイルを使って未学習の画像に対して結果の検証については以下のコマンド
   ```
   ./darknet detector test <dir>/path.conf  <dir>/YOLOv3-voc.backup <dir>/picture.png 
+  
+  打开摄像头 把test换成demo  
+  ./darknet detector demo <dir>/path.conf  <dir>/YOLOv3-voc.backup 
   ```
