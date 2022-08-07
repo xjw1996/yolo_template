@@ -91,6 +91,6 @@
   ```
   ./darknet detector test <dir>/path.conf  <dir>/YOLOv3-voc.backup <dir>/picture.png 
   
-  ウェブカメラをUSBと繋げて、上記で書かれた命令のtest箇所をdemoの方に変更
+  ウェブカメラをUSBポートに繋げて、上記で書かれた命令のtest箇所をdemoの方に変更
   ./darknet detector demo <dir>/path.conf  <dir>/YOLOv3-voc.backup 
   ```
